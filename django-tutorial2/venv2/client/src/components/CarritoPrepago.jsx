@@ -1,12 +1,14 @@
 import { useCart } from "../context/CarritoContext";
 import { useState } from "react";
+import '../css/CarritoPrepago.css'
+
 function CarritoPrepago() {
   const { cartItems, calculateTotal,removeFromCart } = useCart();
 
   const [productos, setProductos] = useState([]);
   return (
     <>
-      <div id="carrito" className="cart-dropdown">
+      <div className="cart-dropdown">
         <table className="cart-table">
           <thead>
             <tr>

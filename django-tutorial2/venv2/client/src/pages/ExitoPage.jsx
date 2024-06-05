@@ -48,12 +48,11 @@ function ExitoPage() {
             <div className="alert alert-success" role="alert">
               <h2>Transaccion exitosa!</h2>
               <img
-                src="check-verde.jpg"
+                src="tic-verde.jpg"
                 alt=""
                 style={{ width: "20%", height: "auto" }}
               />
               <CarritoExito />
-              <a href="/home">Volver al inicio</a>
             </div>
             <h2>Transacción confirmada</h2>
             <pre>{JSON.stringify(transactionData, null, 2)}</pre>
@@ -61,10 +60,16 @@ function ExitoPage() {
         )}
         {error && (
           <div>
-            <h2>Error</h2>
+            <h2>Error!</h2>
+            <img
+              src="cruz-roja.png"
+              alt=""
+              style={{ width: "30%", height: "auto" }}
+            />
             <p>{error}</p>
           </div>
         )}
+        <a href="/home">Volver al inicio</a>
         <hr />
       </div>
     </>

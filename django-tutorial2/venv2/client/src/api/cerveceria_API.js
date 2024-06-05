@@ -12,6 +12,14 @@ export const getAllProductos = () => {
   return cerveceriaAPI.get("/productos/");
 };
 
+export const agregarProducto = (producto) => {
+  return cerveceriaAPI.post("/productos/")
+}
+
+export const registrarUsuario = (usuario) =>{
+  return cerveceriaAPI.post("/usuarios/")
+}
+
 export const getTokenTransbank = async () => {
   try {
     const response = await axios.get(
